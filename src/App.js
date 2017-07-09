@@ -1,21 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import HomePage from '../src/container/HomePage';
+import ProductIndexPage from '../src/container/product/ProductIndexPage';
+import TeamWorkPage from '../src/container/TeamWorkPage';
+import {connect} from 'react-redux';
+import {
+    BrowserRouter as Router,
+    Route,
+} from 'react-router-dom'
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Router>
+                <div>
+                    <Route exact path="/" component={HomePage}/>
+                    <Route exact path="/product" component={ProductIndexPage}/>
+                    <Route exact path="/teamwork" component={TeamWorkPage}/>
+                </div>
+            </Router>
+        );
+    }
+
+
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    const {login} = state;
+    return {
+        login,
+    }
+}
+export default connect(mapStateToProps)(App)
