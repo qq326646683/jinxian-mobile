@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {isEmptyObject} from '../util/CommonUtil';
-import {Carousel, WingBlank, Flex, WhiteSpace, Icon} from 'antd-mobile';
+import {WingBlank,Carousel, Flex, WhiteSpace, Icon} from 'antd-mobile';
 import {getHomeAds} from '../actions/home';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
@@ -34,8 +34,10 @@ class HomePage extends Component {
                         <Flex.Item>
                             <Flex>
                                 <Flex.Item>
-                                    <img width="100%" height="100%"
-                                         src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_price.png"/>
+                                    <Link to="/askprice">
+                                        <img width="100%" height="100%"
+                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_price.png"/>
+                                    </Link>
                                 </Flex.Item>
                                 <Flex.Item>
                                     <Link to="/teamwork">
