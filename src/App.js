@@ -10,6 +10,9 @@ import WeChatgzhPage from '../src/container/product/WeChatgzhPage';
 import WeChatxcxPage from '../src/container/product/WeChatxcxPage';
 import TeamWorkPage from '../src/container/TeamWorkPage';
 import AskPricePage from '../src/container/AskPricePage';
+import IntroducePage from '../src/container/IntroducePage';
+import Aboutus from '../src/container/AboutusPage';
+import AnliIndexPage from '../src/container/anli/AnliIndexPage';
 import {connect} from 'react-redux';
 import {
     BrowserRouter as Router,
@@ -32,6 +35,9 @@ class App extends Component {
                     <Route exact path="/product-wechatxcx" component={WeChatxcxPage}/>
                     <Route exact path="/teamwork" component={TeamWorkPage}/>
                     <Route exact path="/askprice" component={AskPricePage}/>
+                    <Route exact path="/introduce" component={IntroducePage}/>
+                    <Route exact path="/aboutus" component={Aboutus}/>
+                    <Route exact path="/anli" component={AnliIndexPage}/>
                 </div>
             </Router>
         );

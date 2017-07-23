@@ -4,7 +4,7 @@ import constant from '../../constant/constant';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 
-class ProductIndexPage extends Component {
+class AnliIndexPage extends Component {
     render() {
         return (
             <div>
@@ -18,7 +18,7 @@ class ProductIndexPage extends Component {
                             <Flex.Item>
                                 <Flex>
                                     <Flex.Item>
-                                        {this.ProductItem("product_h5.png", "h5广告页制作", '/product-h5')}
+                                        {this.ProductItem("product_h5.png", "h5广告页制作", '/anli-h5')}
                                     </Flex.Item>
                                     <Flex.Item>
                                         {this.ProductItem("product_xiangyin.png", "响应式网站", '/product-bootstrap')}
@@ -26,18 +26,15 @@ class ProductIndexPage extends Component {
                                     <Flex.Item>
                                         {this.ProductItem("product_app.png", "手机app", '/product-app')}
                                     </Flex.Item>
+
                                 </Flex>
-                                <Flex>
-                                    <Flex.Item>
-                                        {this.ProductItem("product_wechat.png", "微信公众号", '/product-wechatgzh')}
-                                    </Flex.Item>
-                                    <Flex.Item>
-                                        {this.ProductItem("product_xcx.png", "小程序", '/product-wechatxcx')}
-                                    </Flex.Item>
-                                    <Flex.Item>
-                                        {this.ProductItem("product_houtai.png", "后台管理", '/product-admin')}
-                                    </Flex.Item>
-                                </Flex>
+                                <Link to='/'>
+                                    <div style={{width: "33%", height: "100%", textAlign: "center", padding: 10}}>
+                                        <img width="50%" height="50%" src={constant.QINIU + "product_houtai.png"}/>
+                                        <div style={{fontSize: 20, color: "black", marginTop: 5}}>后台管理</div>
+                                    </div>
+                                </Link>
+
 
                             </Flex.Item>
                         </Flex>
@@ -60,4 +57,4 @@ class ProductIndexPage extends Component {
 }
 
 
-export default ProductIndexPage
+export default AnliIndexPage

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {isEmptyObject} from '../util/CommonUtil';
-import {WingBlank,Carousel, Flex, WhiteSpace, Icon} from 'antd-mobile';
+import {WingBlank, Carousel, Flex, WhiteSpace, Icon} from 'antd-mobile';
 import {getHomeAds} from '../actions/home';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
@@ -49,20 +49,26 @@ class HomePage extends Component {
                             </Flex>
                             <Flex>
                                 <Flex.Item>
-                                    <img width="100%" height="100%"
-                                         src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_jieshao.png"/>
+                                    <Link to='/introduce'>
+                                        <img width="100%" height="100%"
+                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_jieshao.png"/>
+                                    </Link>
                                 </Flex.Item>
 
                                 <Flex.Item>
-                                    <img width="100%" height="100%"
-                                         src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_us.png"/>
+                                    <Link to="/aboutus">
+                                        <img width="100%" height="100%"
+                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_us.png"/>
+                                    </Link>
                                 </Flex.Item>
                             </Flex>
                         </Flex.Item>
                     </Flex>
                     <WhiteSpace size="md"/>
-                    <img width="100%" height="100%"
-                         src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_anli.png"/>
+                    <Link to='/anli'>
+                        <img width="100%" height="100%"
+                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_anli.png"/>
+                    </Link>
                 </WingBlank>
                 {this.renderFooter()}
             </div>
