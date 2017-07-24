@@ -21,7 +21,7 @@ class AnliIndexPage extends Component {
                                         {this.ProductItem("product_h5.png", "h5广告页制作", '/anli-h5')}
                                     </Flex.Item>
                                     <Flex.Item>
-                                        {this.ProductItem("product_xiangyin.png", "响应式网站", '/product-bootstrap')}
+                                        {this.ProductItem("product_xiangyin.png", "响应式网站", '/anli-bootstrap')}
                                     </Flex.Item>
                                     <Flex.Item>
                                         {this.ProductItem("product_app.png", "手机app", '/product-app')}
