@@ -32,7 +32,7 @@ class BootstrapPage extends Component {
                         </Flex>
                         <Flex style={{textAlign: 'right'}}>
                             <FlexItem style={{margin: '20px 10px'}}>
-                                {ProductLink('bootstrap')}
+                                {ProductLink('bootstrap1')}
                             </FlexItem>
                         </Flex>
                     </WingBlank>

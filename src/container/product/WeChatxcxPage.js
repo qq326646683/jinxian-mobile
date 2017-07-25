@@ -28,11 +28,7 @@ class WeChatxcxPage extends Component {
                                 <img width="100%" src={constant.QINIU+'xiaochengxu2.png'}/>
                             </FlexItem>
                         </Flex>
-                        <Flex style={{textAlign:'right'}}>
-                            <FlexItem style={{margin:'20px 10px'}}>
-                                {ProductLink('xiaochengxu')}
-                            </FlexItem>
-                        </Flex>
+
                     </WingBlank>
                 </div>
             </div>

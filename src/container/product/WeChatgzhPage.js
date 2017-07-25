@@ -28,11 +28,7 @@ class BootstrapPage extends Component {
                                 <img width="100%" src={constant.QINIU+'WechatIMG30.jpeg'}/>
                             </FlexItem>
                         </Flex>
-                        <Flex style={{textAlign:'right'}}>
-                            <FlexItem style={{margin:'20px 10px'}}>
-                                {ProductLink('gongzhonghao')}
-                            </FlexItem>
-                        </Flex>
+
                     </WingBlank>
                 </div>
             </div>

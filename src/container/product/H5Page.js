@@ -31,7 +31,7 @@ class H5Page extends Component {
                         </Flex>
                         <Flex style={{textAlign:'right'}}>
                             <FlexItem style={{margin:'20px 10px'}}>
-                                {ProductLink('H5')}
+                                {ProductLink('h5')}
                             </FlexItem>
                         </Flex>
                     </WingBlank>

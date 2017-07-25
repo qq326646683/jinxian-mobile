@@ -6,7 +6,7 @@ import './ProductLink.css';
  const ProductLink=(path)=>{
     return(
         <div className={'link-product'} >
-            <Link to={'/product_'+path}>{'>>案例'}</Link>
+            <Link to={'/anli-'+path}>{'>>案例'}</Link>
         </div>
     )
 }
