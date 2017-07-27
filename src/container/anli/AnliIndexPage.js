@@ -34,7 +34,12 @@ class AnliIndexPage extends Component {
                                         <div style={{fontSize: 20, color: "black", marginTop: 5}}>后台管理</div>
                                     </div>
                                 </Link>
-
+                                <Link to='/anli-vr'>
+                                    <div style={{width: "33%", height: "100%", textAlign: "center", padding: 10}}>
+                                        <img width="50%" height="50%" src={constant.QINIU + "product_houtai.png"}/>
+                                        <div style={{fontSize: 20, color: "black", marginTop: 5}}>VR</div>
+                                    </div>
+                                </Link>
 
                             </Flex.Item>
                         </Flex>

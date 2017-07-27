@@ -20,6 +20,7 @@ import AnBootstrapPage3 from './container/anli/AnBootstrapPage3';
 import AnAppPage from './container/anli/AnAppPage';
 import AnAdminPage1 from './container/anli/AnAdminPage1';
 import AnAdminPage2 from './container/anli/AnAdminPage2';
+import AnVrPage from './container/anli/AnVrPage';
 import {connect} from 'react-redux';
 import {
     BrowserRouter as Router,
@@ -52,6 +53,7 @@ class App extends Component {
                     <Route exact path="/anli-app" component={AnAppPage}/>
                     <Route exact path="/anli-admin1" component={AnAdminPage1}/>
                     <Route exact path="/anli-admin2" component={AnAdminPage2}/>
+                    <Route exact path="/anli-vr" component={AnVrPage}/>
                 </div>
             </Router>
         );
