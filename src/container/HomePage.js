@@ -4,6 +4,7 @@ import {WingBlank, Carousel, Flex, WhiteSpace, Icon} from 'antd-mobile';
 import {getHomeAds} from '../actions/home';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
+import constant from '../constant/constant'
 //#3AC3C4
 
 class HomePage extends Component {
@@ -27,7 +28,7 @@ class HomePage extends Component {
                         <Flex.Item>
                             <Link to="/product">
                                 <img width="100%" height="100%"
-                                     src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_product.png"/>
+                                     src={constant.QINIU + 'home_product.png'}/>
                             </Link>
                         </Flex.Item>
 
@@ -36,13 +37,13 @@ class HomePage extends Component {
                                 <Flex.Item>
                                     <Link to="/askprice">
                                         <img width="100%" height="100%"
-                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_price.png"/>
+                                             src={constant.QINIU + 'home_price.png'}/>
                                     </Link>
                                 </Flex.Item>
                                 <Flex.Item>
                                     <Link to="/teamwork">
                                         <img width="100%" height="100%"
-                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_hezuo.png"/>
+                                             src={constant.QINIU + 'home_hezuo.png'}/>
                                     </Link>
 
                                 </Flex.Item>
@@ -51,14 +52,14 @@ class HomePage extends Component {
                                 <Flex.Item>
                                     <Link to='/introduce'>
                                         <img width="100%" height="100%"
-                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_jieshao.png"/>
+                                             src={constant.QINIU + 'home_jieshao.png'}/>
                                     </Link>
                                 </Flex.Item>
 
                                 <Flex.Item>
                                     <Link to="/aboutus">
                                         <img width="100%" height="100%"
-                                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_us.png"/>
+                                             src={constant.QINIU + 'home_us.png'}/>
                                     </Link>
                                 </Flex.Item>
                             </Flex>
@@ -67,7 +68,7 @@ class HomePage extends Component {
                     <WhiteSpace size="md"/>
                     <Link to='/anli'>
                         <img width="100%" height="100%"
-                             src="http://7xt3sl.com2.z0.glb.qiniucdn.com/home_anli.png"/>
+                             src={constant.QINIU + 'home_anli.png'}/>
                     </Link>
                 </WingBlank>
                 {this.renderFooter()}
@@ -96,7 +97,7 @@ class HomePage extends Component {
                                     width="100%"
                                     height={window.width * 3 / 5}
                                     alt="icon"
-                                    src={item.imgurl}
+                                    src={constant.QINIU + item.imgurl}
                                     onLoad={() => {
                                         // fire window resize event to change height
                                         window.dispatchEvent(new Event('resize'));

@@ -3,7 +3,7 @@ const style = {
 };
 
 const url = {
-    QINIU:"http://7xt3sl.com2.z0.glb.qiniucdn.com/"
+    QINIU:"http://file.jinxianyun.com/"
 }
 
 export default {
